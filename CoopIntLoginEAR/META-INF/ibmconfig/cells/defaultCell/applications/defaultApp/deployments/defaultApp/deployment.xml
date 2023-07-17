@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1334588957921">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1334588957921" startingWeight="10">
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1334588957921" startingWeight="10000" uri="CoopIntLogin.war"/>
+    <classloader xmi:id="Classloader_1334588957921" mode="PARENT_FIRST">
+      <libraries xmi:id="LibraryRef_1334588957923" libraryName="struts"/>
+      <libraries xmi:id="LibraryRef_1334588957924" libraryName="utils"/>
+      <libraries xmi:id="LibraryRef_1338996609102" libraryName="auth"/>
+    </classloader>
+  </deployedObject>
+</appdeployment:Deployment>

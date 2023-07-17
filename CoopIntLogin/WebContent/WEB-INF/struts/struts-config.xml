@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+
+	<!-- Form Beans -->
+	<form-beans>
+		
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+		<forward name="genericError" path="error.jsp" />
+		<forward name="manutenzione" path="Manutenzione.def">
+		</forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action path="/Aut" 
+				type="it.finanze.entrate.index.login.actions.AutorizzazioneAction">
+			<forward name="success" path="/SideMenu.do"/>	
+			<forward name="failureAuth" path="failureAuth.def"/>
+		</action>	
+		
+		<action path="/Logoff" type="it.finanze.entrate.index.login.actions.LogoffAction">
+			<forward name="success" path="/jsp/index.jsp" />	
+		</action>
+		<action path="/SideMenu" type="it.finanze.entrate.index.login.actions.SideMenuAction">
+			<forward name="success" path="Home.def" />
+			<forward name="success2" path="Home2.def" />
+			<forward name="NewsSuccess" path="News.def"/>
+			<forward name="HelpSuccess" path="Help.def"/>
+		</action>
+	</action-mappings>
+	
+	<controller nocache="false">
+		<set-property property="processorClass" value="it.finanze.entrate.index.login.util.SessionRequestProcessor"/>
+	</controller>
+	
+	<!-- Message Resources -->
+	<message-resources parameter="it.finanze.entrate.index.login.resources.ApplicationResources"/>
+	
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/struts/tiles-defs.xml"/>
+		<set-property property="moduleAware" value="true"/>
+	</plug-in>
+
+</struts-config>

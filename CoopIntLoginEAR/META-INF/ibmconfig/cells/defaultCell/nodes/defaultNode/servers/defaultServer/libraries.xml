@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:libraries="http://www.ibm.com/websphere/appserver/schemas/5.0/libraries.xmi">
+  <libraries:Library xmi:id="Library_1334588957765" name="auth">
+    <classPath>/prod/installedApps/coopintLogin/lib/auth</classPath>
+  </libraries:Library>
+  <libraries:Library xmi:id="Library_1334588957767" name="struts">
+    <classPath>/prod/installedApps/coopintLib/struts</classPath>
+  </libraries:Library>
+  <libraries:Library xmi:id="Library_1334588957768" name="utils">
+    <classPath>/prod/installedApps/coopintLib/utils</classPath>
+  </libraries:Library>
+</xmi:XMI>

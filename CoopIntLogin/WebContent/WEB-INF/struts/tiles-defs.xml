@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+<!--  <!DOCTYPE tiles-definitions SYSTEM "dtds/tiles-config_1_1.dtd"> -->
+<tiles-definitions>
+	<!--Define each of your definitions here-->
+	
+	<!-- Base Tiles Definitione-->
+	<definition name="SiteLayout" path="/jsp/siteLayout.jsp">
+		<put name="header" value="/jsp/header.jsp" />
+		<put name="menuOrizzontale" value="/jsp/menuOrizzontale.jsp"></put>
+        <put name="footer" value="/jsp/footer.jsp" /> 
+    </definition>
+
+	<!-- Base Tiles Definition con Menu laterale-->
+	<definition name="SiteLayoutM" path="/jsp/siteLayoutM.jsp">
+		<put name="header" value="/jsp/header.jsp" />
+		<put name="menuOrizzontale" value="/jsp/menuOrizzontale.jsp"></put>
+ 		<put name="menuLaterale" value="/jsp/menuLaterale.jsp"></put>
+        <put name="footer" value="/jsp/footer.jsp" /> 
+    </definition>
+    
+    <!-- Home -->
+	<definition name="Home.def" extends="SiteLayout">
+        <put name="title" value="Home" />
+        <put name="content" value="/jsp/home.jsp" />
+    </definition>
+    <!-- Help -->
+    <definition name="Help.def" extends="SiteLayout">
+        <put name="title" value="Help" />
+        <put name="content" value="/doc/help.jsp" />
+    </definition>
+    <!-- Autorizzazione fallita -->
+	<definition name="failureAuth.def" extends="SiteLayout">
+        <put name="title" value="No Autorizzazione" />
+        <put name="menuOrizzontale" value="#"></put>
+        <put name="content" value="/loginErrorAuth.jsp" />
+    </definition>
+    <!-- Manutenzione -->
+	<definition name="Manutenzione.def" extends="SiteLayoutM">
+        <put name="title" value="Manutenzione" />
+        <put name="content" value="/jsp/manutenzione.jsp" />
+    </definition>
+    
+    <!-- Home -->
+	<definition name="Home2.def" extends="SiteLayoutM">
+        <put name="title" value="Home 2.0" />
+        <put name="content" value="/jsp/home.jsp" />
+    </definition>
+    
+   
+    
+</tiles-definitions>

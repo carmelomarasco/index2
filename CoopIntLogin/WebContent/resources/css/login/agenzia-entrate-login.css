@@ -1,0 +1,55 @@
+body {
+	background-color: #f0f0f0;
+	background-image: none;
+	color: #004080;
+}
+#assistenza {
+	color: #004080;
+	display: inline-block;
+}
+#assistenza .fa {
+	margin-right: 0;
+}
+#login-form,
+.login-form {
+	border-color: #eb641f;
+	box-shadow: 0 5px 50px #ccc;
+}
+label,
+.input-group-addon > .fa {
+	color: #004080;
+}
+#page-footer {
+	color: #004080;
+}
+#page-footer a {
+	color: #06c;
+}
+a:hover {
+	color: #eb641f;
+}
+.btn-primary:hover {
+	background-color: #eb641f;
+	border-color: #eb641f;
+}
+hr {
+	border-color: rgba(0,0,0,.1);
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#assistenza {
+		margin-bottom: 20px;
+	}
+	#assistenza .fa {
+		margin-right: .5em;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#assistenza {
+		margin-top: 3em;
+		margin-bottom: 0;
+	}
+}

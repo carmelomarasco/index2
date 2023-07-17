@@ -1,0 +1,29 @@
+/* CSS specifico di ogni applicazione (l'unico da modificare) */
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
+
+/* Extra large devices (x-large desktops, 1440px and up) */
+@media (min-width: 1440px) {
+	
+}
+.navbar-nav {
+    width: 100%;
+}
+.navbar-nav > li {
+    text-align: center;
+    /*width: 16.6%;*/
+}
